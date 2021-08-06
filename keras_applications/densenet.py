@@ -302,7 +302,7 @@ def DenseNet121(include_top=True,
                 input_tensor=None,
                 input_shape=None,
                 pooling=None,
-                classes=100,
+                classes=200,
                 **kwargs):
     return DenseNet([6, 12, 24, 16],
                     include_top, weights,
