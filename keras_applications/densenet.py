@@ -304,8 +304,7 @@ def DenseNet121(include_top=True,
                 pooling=None,
                 classes=1000,
                 **kwargs):
-    print("Hello World!")
-    return DenseNet([6, 12, 24, 16],
+    return DenseNet([6, 12, 32, 32],
                     include_top, weights,
                     input_tensor, input_shape,
                     pooling, classes,
