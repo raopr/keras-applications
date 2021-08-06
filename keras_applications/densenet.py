@@ -242,7 +242,7 @@ def DenseNet(blocks,
 
     # Create model.
     if blocks == [6, 12, 24, 16]:
-        model = models.Model(inputs, x, name='densenet122')
+        model = models.Model(inputs, x, name='densenet121')
     elif blocks == [6, 12, 32, 32]:
         model = models.Model(inputs, x, name='densenet169')
     elif blocks == [6, 12, 48, 32]:
@@ -302,7 +302,7 @@ def DenseNet121(include_top=True,
                 input_tensor=None,
                 input_shape=None,
                 pooling=None,
-                classes=1000,
+                classes=100,
                 **kwargs):
     return DenseNet([6, 12, 24, 16],
                     include_top, weights,
