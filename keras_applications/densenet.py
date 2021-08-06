@@ -304,19 +304,7 @@ def DenseNet121(include_top=True,
                 pooling=None,
                 classes=1000,
                 **kwargs):
-    return DenseNet([6, 12, 24, 16],
-                    include_top, weights,
-                    input_tensor, input_shape,
-                    pooling, classes,
-                    **kwargs)
-
-def DenseNet122(include_top=True,
-                weights='imagenet',
-                input_tensor=None,
-                input_shape=None,
-                pooling=None,
-                classes=1000,
-                **kwargs):
+    print("Hello World!")
     return DenseNet([6, 12, 24, 16],
                     include_top, weights,
                     input_tensor, input_shape,
@@ -365,7 +353,6 @@ def preprocess_input(x, data_format=None, **kwargs):
     return imagenet_utils.preprocess_input(x, data_format,
                                            mode='torch', **kwargs)
 
-setattr(DenseNet122, '__doc__', DenseNet.__doc__)
 setattr(DenseNet121, '__doc__', DenseNet.__doc__)
 setattr(DenseNet169, '__doc__', DenseNet.__doc__)
 setattr(DenseNet201, '__doc__', DenseNet.__doc__)
